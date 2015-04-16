@@ -1,0 +1,2 @@
+cmdhistory=["(defn change-for [amount]\\n  (if (<\= amount 0)\\n    []\\n    [1]))" "(change-for [1])" "(change-for 1)" "(defn change-for [amount]\\n  (into [] (repeat amount 0)))" "(change-for 0)" "(change-for 1)" "(change-for 2)" "(defn change-for [amount]\\n  (into [] (repeat amount 1)))" "(change-for 1)" "(change-for 2)" "(change-for 3)"]
+eclipse.preferences.version=1
