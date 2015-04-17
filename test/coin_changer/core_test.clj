@@ -23,6 +23,10 @@
   (testing "change for four"
            (is (= [1 1 1 1] (change-for 4)))))
 
-(deftest change-for-five
-  (testing "change for five"
+(deftest change-for-nickel
+  (testing "change for nickel"
            (is (= [5] (change-for 5)))))
+
+(deftest change-for-five
+  (testing "change for six cents"
+           (is (= [5 1] (change-for 6)))))
