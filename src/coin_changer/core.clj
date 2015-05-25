@@ -1,11 +1,10 @@
 (ns coin-changer.core)
+  
+(def COINS [1 5 10 25])
+            
 
-(defn change-for [amount]
+
+(defn make-change [amount]
   (if (<= amount 0)
-    [amount]
-	  (if(< amount 5)
-	    (into [] (repeat amount 1) )
-	    (into [5] (repeat (- amount 5) 1)) )))
-
-
-
+    []
+    [1]))
