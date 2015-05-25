@@ -7,4 +7,4 @@
 (defn make-change [amount]
   (if (<= amount 0)
     []
-    [1]))
+    (repeat amount 1)))
