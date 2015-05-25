@@ -4,7 +4,8 @@
             
 
 
-(defn make-change [amount]
-  (if (<= amount 0)
-    []
-    (repeat amount 1)))
+(defn make-change [cents]
+  (if (< cents 5)
+    (into [] (repeat cents 1))
+    (into [5] (repeat (- cents 5) 1))))
+

@@ -17,6 +17,9 @@
   
   (it "can change 5 cents as a nickel"
        (should= [5] (make-change 5)))
-          
+  
+  (it "can change 6 cents as a nickel"
+       (should= [5 1] (make-change 6)))
+                  
 )
 
